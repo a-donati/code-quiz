@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Code Quiz</title>
+</head>
+
+<body>
+  <header>
+    <h3>Code Quiz</h3>
+    <!-- <div class="timer-container">
+      <span class="timer"></span>
+    </div> -->
+  </header>
+<!-- quiz intro message with start button  -->
+<div class="quiz-intro">
+  <h2>Welcome to my coding quiz. Answer as many questions as you can within the time limit. If you answer a question incorrectly, 10 points will be deducted from your remaining time. Click start to begin </h2>
+  <button id="start">Start</button>
+</div>
+<!-- end intro container -->
+
+  <!-- quiz question container -->
+  <div class="quiz-container hide" id="quiz">
+    <div class="quiz-header">
+      <h2 id="question">Question</h2>
+      <ul class="list">
+        <li><input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">Question</label>
+        </li>
+
+        <li><input type="radio" name="answer" id="b" class="answer">
+          <label for="a" id="b_text">Question</label>
+        </li>
+
+        <li><input type="radio" name="answer" id="c" class="answer">
+          <label for="a" id="c_text">Question</label>
+        </li>
+
+        <li><input type="radio" name="answer" id="d" class="answer">
+          <label for="a" id="d_text">Question</label>
+        </li>
+
+      </ul>
+      <button id="submit">Submit</button>
+    </div>
+    <div class="timer-container">
+      <span class="timer"></span>
+    </div>
+  </div>
+  <!-- end quiz container -->
+  <script src="script.js"></script>
+</body>
+
+</html>
