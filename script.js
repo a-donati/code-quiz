@@ -216,4 +216,5 @@ highScoresInitial.addEventListener("click", function (event) {
 
     saveAllScores(event);
     console.log("score saved");
+    location.href="scores.html";
 });
