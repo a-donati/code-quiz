@@ -10,7 +10,7 @@ const quizData = [
     },
     {
         question: "What does css stand for?",
-        a: "cascading style sheets",
+        a: "Cascading Style Sheets",
         b: "C",
         c: "Python",
         d: "Javascript",
@@ -45,10 +45,10 @@ const quizData = [
     {
         question:
             "In JavaScript, what is a block of code called that is used to perform a specific task?",
-        a: "string",
-        b: "function",
-        c: "declaration",
-        d: "variable",
+        a: "String",
+        b: "Function",
+        c: "Declaration",
+        d: "Variable",
         correct: "b",
     },
 ];
