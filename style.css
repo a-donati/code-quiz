@@ -45,7 +45,6 @@
   padding: 4rem;
 }
 
-
 h2{ 
   padding: 1rem;
   text-align: center;
@@ -102,16 +101,6 @@ button:focus {
   padding: 1.3rem;
   border-radius: 5px;
   margin-bottom: 20px;
-}
-
-
-.hsbutton:hover {
-  background-color: #732d91
-}
-
-.hsbutton:focus {
-  outline: none;
-  background-color: #5e3370;
 }
 
 .hide {
