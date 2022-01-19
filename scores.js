@@ -12,10 +12,18 @@ if (localStorage.getItem("allScores") === null) {
 allScores.map(score => {
     console.log(score);
 });
-// returns intials and score into list item and joins data into one array
-listofscores.innerHTML = allScores.map(score => {
-    return `<li class="high-score">${score.initials}-${score.score}</li>`;
-}).join("");
+
+let tableHeading = `<tr>
+<th>Initials</th>
+<th>Score</th>
+</tr>`
+listofscores.innerHTML = tableHeading;
+// for each person and score, returns a table row with the inserted data
+allScores.forEach(person => {
+    let tableRow = document.createElement("tr"); 
+    tableRow.innerHTML = `<td>${person.initials}</td><td>${person.score}</td>`;
+    listofscores.appendChild(tableRow);
+ })
 
 // click return button to go back to start of the quiz
 returnBtn.addEventListener("click",function(){

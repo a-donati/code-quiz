@@ -78,7 +78,10 @@ let score = 0;
 let timerCount = 100;
 
 // when start button is clicked, loadQuiz is called
-startBtn.addEventListener("click", loadQuiz);
+startBtn.addEventListener("click", function() {
+    loadQuiz();
+    startTimer();
+});
 
 function loadQuiz() {
     // start button and game instructions are set to hidden
@@ -88,7 +91,6 @@ function loadQuiz() {
     quiz.classList.remove("hide");
     // when quiz is loaded, deselect answers and start timer
     deselectAnswers();
-    startTimer();
     // currentQuiz is set to 0, get currentQuizData by accessing quizData array at the first index
     const currentQuizData = quizData[currentQuiz];
     questionEl.innerText = currentQuizData.question;
