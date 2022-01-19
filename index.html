@@ -16,12 +16,14 @@
       <span class="timer"></span>
     </div> -->
   </header>
-<!-- quiz intro message with start button  -->
-<div class="quiz-intro">
-  <h2>Welcome to my coding quiz. Answer as many questions as you can within the time limit. If you answer a question incorrectly, 10 points will be deducted from your remaining time. Click start to begin </h2>
-  <button id="start">Start</button>
-</div>
-<!-- end intro container -->
+  <!-- quiz intro message with start button  -->
+  <div class="quiz-intro">
+    <h2>Welcome to my coding quiz. Answer as many questions as you can within the time limit. If you answer a question
+      incorrectly, or press submit without answering, 10 seconds will be deducted from your remaining time. Click start
+      to begin </h2>
+    <button id="start">Start</button>
+  </div>
+  <!-- end intro container -->
 
   <!-- quiz question container -->
   <div class="quiz-container hide" id="quiz">
@@ -50,9 +52,16 @@
         <p id="result"></p>
       </div>
     </div>
+    <!-- start timer container -->
     <div class="timer-container">
       <span class="timer"></span>
     </div>
+    <!-- end of timer container -->
+    <!-- form for initials entry -->
+    <form id="initials-entry">
+      <label for="Initials"></label>
+      <input type="text" name="initials" id="initials" placeholder="Enter your initials" class="hide"/><button id="highScoresInitial" class="submit hide">Submit</button>
+</form>
   </div>
   <!-- end quiz container -->
   <script src="script.js"></script>
